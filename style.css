@@ -240,3 +240,7 @@ h3{
     transition: 0.5s;
 }
 
+.layer:hover h3{ 
+    bottom:49%;
+    opacity: 1;
+}
