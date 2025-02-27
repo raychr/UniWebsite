@@ -212,6 +212,7 @@ h3{
 
 .campus-col img{
     width: 100%;
+    display: block;
 }
 
 .layer{
@@ -237,10 +238,50 @@ h3{
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+    opacity: 0;
     transition: 0.5s;
 }
 
 .layer:hover h3{ 
     bottom:49%;
-    opacity: 1;
+    opacity: 1;
+}
+
+/* facilities */
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #b19060;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0;
+    text-align: center;
+}
+
+.facilities-col h3{
+    margin: 16px;
+    margin-bottom: 15px;
+    text-align: center;
 }
