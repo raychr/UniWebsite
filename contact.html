@@ -33,34 +33,61 @@
       <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
 
-    <h1>About Us</h1>
+    <h1>Contact Us</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
 
   </section>
 
+  
+
   <!---- about us ---->
-  <section class="about-us">
-    <div class="row">
 
-      <div class="about-col">
-        <h1>We Are The World's Largest University</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt ex, voluptatem, assumenda rerum
-          nulla dolorem, tenetur saepe voluptatum perspiciatis voluptates. Dicta doloribus sapiente hic nesciunt, dolore
-          nulla. Consequuntur, nesciunt.</p>
-        <a href="" class="hero-btn blue-btn">Explore Now</a>
-      </div>
-      <div class="about-col">
-        <img src="img/background.jpeg">
-      </div>
+  <section class="location">
 
-
-    </div>
-
-
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56207.02442419299!2d-54.29516413393239!3d-28.300171117132358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fe9091a97f35f1%3A0x5f576c0ad8e18ca8!2sSanto%20%C3%82ngelo%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1740889166989!5m2!1spt-BR!2sbr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   </section>
 
+  <section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Santo Ângelo, Rio Grande Do Sul, BR</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+55 9 0000-0000</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>email@gmail.com</h5>
+                    <p>Email us your Query</p>
+                </span>
+            </div>
+        </div>
 
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message"></textarea>
+                <button type="submit" class="hero-btn blue-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
 
   <!---- footer ---->
   <section class="footer">
