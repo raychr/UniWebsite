@@ -429,6 +429,10 @@ h3{
     font-size: 62px;
 }
 
+.sub-header p{
+    color: #fff;
+}
+
 .about-us{
     width: 80%;
     margin: auto;
@@ -447,6 +451,7 @@ h3{
 
 .about-col h1{
     padding-top: 0;
+    color: #ac8b4e;
 }
 
 .about-col p{

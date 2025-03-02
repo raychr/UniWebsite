@@ -1,101 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UniversityWebsite</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Monomakh&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" />
-    <script src="https://kit.fontawesome.com/cf1c5c730c.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body>
-    <section class="sub-header">
-      <nav>
-        <a href="index.html"><img src="img/logo2.png" /></a>
-        <div class="nav-links" id="navLinks">
-          <!---- Close ---->
-          <i class="fa-solid fa-bars-staggered" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </div>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniversityWebsite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Monomakh&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" />
+  <script src="https://kit.fontawesome.com/cf1c5c730c.js" crossorigin="anonymous"></script>
+</head>
 
-        <!---- Menu ---->
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-      </nav>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="img/logo2.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <!---- Close ---->
+        <i class="fa-solid fa-bars-staggered" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
 
-      <h1>About Us</h1>
+      <!---- Menu ---->
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
 
-    </section>
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
 
-     <!---- about us ---->
-    <section class="about-us">
-      <div class="row">
-        
-        <div class="about-col">
-          <h1>We Are The World's Largest University</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt ex, voluptatem, assumenda rerum nulla dolorem, tenetur saepe voluptatum perspiciatis voluptates. Dicta doloribus sapiente hic nesciunt, dolore nulla. Consequuntur, nesciunt.</p>
-          <a href="" class="hero-btn blue-btn">Explore Now</a>
-        </div>
-        <div class="about-col">
-          <img src="img/background.jpeg">
-        </div>
+  </section>
 
+  <!---- about us ---->
+  <section class="about-us">
+    <div class="row">
 
+      <div class="about-col">
+        <h1>We Are The World's Largest University</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sunt ex, voluptatem, assumenda rerum
+          nulla dolorem, tenetur saepe voluptatum perspiciatis voluptates. Dicta doloribus sapiente hic nesciunt, dolore
+          nulla. Consequuntur, nesciunt.</p>
+        <a href="" class="hero-btn blue-btn">Explore Now</a>
+      </div>
+      <div class="about-col">
+        <img src="img/background.jpeg">
       </div>
 
 
-
-    </section>
-
+    </div>
 
 
-     <!---- footer ---->
-    <section class="footer">
-      <h4>About Us</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium, explicabo ducimus eaque magnam nihil omnis iure est<br> ullam laboriosam cumque error quis similique enim maxime. Nihil itaque ut odio.</p>
-      <div class="icon">
-        <a href="https://www.instagram.com/rays_chris_/"> <i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/raychr"> <i class="fa-brands fa-github"></i></a>  
-        <a href="https://www.linkedin.com/in/rayannachris/"> <i class="fa-brands fa-linkedin"></i></a>
-        <a onclick="copyDiscordUsername()" style="position: relative;">
-          <i class="fa-brands fa-discord"></i>
-          <span id="copyMessage" class="copy-message">rays_chris</span>
-        </a>   
-      </div>
-      <p> <i class="fa-solid fa-paw"></i> </i> by raychr </p>
 
-    </section>
+  </section>
 
-     <!---- JavaScript ---->
-     <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
 
-      function copyDiscordUsername() {
-        const username = "rays_chris";
-        navigator.clipboard.writeText(username).then(() => {
-          const message = document.getElementById("copyMessage");
-          message.style.opacity = "1";
-          setTimeout(() => {
-            message.style.opacity = "0";
-          }, 2000);
-        }).catch(err => {
-          console.error("Erro ao copiar: ", err);
-        });
-      }
-    </script>
-  </body>
+
+  <!---- footer ---->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium, explicabo ducimus eaque magnam nihil
+      omnis iure est<br> ullam laboriosam cumque error quis similique enim maxime. Nihil itaque ut odio.</p>
+    <div class="icon">
+      <a href="https://www.instagram.com/rays_chris_/"> <i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/raychr"> <i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/rayannachris/"> <i class="fa-brands fa-linkedin"></i></a>
+      <a onclick="copyDiscordUsername()" style="position: relative;">
+        <i class="fa-brands fa-discord"></i>
+        <span id="copyMessage" class="copy-message">rays_chris</span>
+      </a>
+    </div>
+    <p> <i class="fa-solid fa-paw"></i> </i> by raychr </p>
+
+  </section>
+
+  <!---- JavaScript ---->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    function copyDiscordUsername() {
+      const username = "rays_chris";
+      navigator.clipboard.writeText(username).then(() => {
+        const message = document.getElementById("copyMessage");
+        message.style.opacity = "1";
+        setTimeout(() => {
+          message.style.opacity = "0";
+        }, 2000);
+      }).catch(err => {
+        console.error("Erro ao copiar: ", err);
+      });
+    }
+  </script>
+</body>
+
 </html>
