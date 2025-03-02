@@ -101,7 +101,7 @@ nav .fa-solid{
 
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 40px;
+        font-size: 55px;
     }
     .nav-links ul li{
         display: block;
